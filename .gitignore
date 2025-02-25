@@ -1,27 +1,83 @@
-# Python
+# ========================================
+# Git Ignore Rules for Python Projects
+# ========================================
+
+# -----------------------------
+# Python Bytecode & Build Files
+# -----------------------------
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
 *.pyd
 .Python
+*.out
+*.db
+
+# -----------------------------
+# Virtual Environments
+# -----------------------------
 env/
 venv/
+.venv
+
+# -----------------------------
+# Packaging / Installer / Build Tools
+# -----------------------------
+build/
+dist/
+.eggs/
+*.egg
+*.egg-info/
+MANIFEST
 pip-log.txt
 pip-delete-this-directory.txt
+.pytest_cache/
+.pybuilder/
+
+# -----------------------------
+# Testing & Coverage
+# -----------------------------
 .tox/
 .nox/
 .coverage
 .coverage.*
-.cache
-nosetests.xml
-coverage.xml
 *.cover
+coverage.xml
+nosetests.xml
 *.log
+
+# -----------------------------
+# Type Checking
+# -----------------------------
 .mypy_cache/
 .dmypy.json
 dmypy.json
 .pyre/
 .pytype/
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# -----------------------------
+# Caches
+# -----------------------------
+.cache
+
+# -----------------------------
+# Jupyter Notebooks
+# -----------------------------
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# -----------------------------
+# Editor & IDE Settings
+# -----------------------------
+.vscode/
+.idea/
+.spyderproject
+.spyproject
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Science / ML Experiment Tracking
+# -----------------------------
+.mlflow/
+wandb/
